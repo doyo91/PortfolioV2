@@ -17,16 +17,28 @@
   &__title {
     font-size: $h2-font-size;
     margin-bottom: $mb-2;
-    display: flex;
-    align-items: center;
+    display: grid;
+    justify-content: flex-start;
+    grid-template-areas: "line name" "line location";
     font-weight: $font-semi;
     &::before {
       content: "";
-      display: block;
-      width: 20px;
+      width: 3px;
       background-color: $alt-color;
-      height: 2px;
+      height: 100%;
       margin-right: 1rem;
+      grid-area: line;
+    }
+
+    & h1 {
+      grid-area: name;
+      font-size: $h2-font-size;
+    }
+
+    & span {
+      grid-area: location;
+      font-size: $normal-font-size;
+      color: $alt-color;
     }
   }
   &__subtitle {
@@ -41,35 +53,16 @@
 
 @media screen and (min-width: $break-medium) {
   .header {
-    padding: 40px 30px;
-    position: relative;
-    &__title {
-      font-size: $h2-font-size;
-      margin-bottom: $mb-2;
-      display: flex;
-      align-items: center;
-      font-weight: $font-semi;
-      &::before {
-        content: "";
-        display: block;
-        width: 20px;
-        background-color: $alt-color;
-        height: 2px;
-        margin-right: 1rem;
-      }
-    }
     &__subtitle {
-      font-size: $h1-font-size;
-      font-weight: $font-semi;
-      margin-bottom: $mb-2;
       width: 50%;
     }
     &__image {
       position: absolute;
       bottom: 100px;
-      right: 0;
-      width: 400px;
+      right: 15px;
+      width: 380px;
       display: block;
+      padding-left: $mb-3;
       // filter: invert(1);
     }
   }

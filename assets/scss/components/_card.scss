@@ -19,14 +19,15 @@
   &__header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
     &Left {
-      font-size: 2rem;
+      font-size: $h2-font-size;
     }
     &Right {
       color: inherit;
       font-size: 1.25rem;
+      min-width: 100px;
 
       i {
         margin-left: 0.25rem;

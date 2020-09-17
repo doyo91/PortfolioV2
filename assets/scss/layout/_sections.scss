@@ -31,6 +31,10 @@
     font-weight: $font-default;
     color: inherit;
     text-align: left;
+
+    & p {
+      margin-top: $mb-1;
+    }
   }
 }
 
