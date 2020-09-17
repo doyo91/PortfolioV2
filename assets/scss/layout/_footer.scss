@@ -20,7 +20,15 @@
   }
 
   .social {
-    width: 400px;
     margin: auto;
+  }
+}
+
+@media screen and (min-width: $break-medium) {
+  .footer {
+    .social {
+      width: 400px;
+      margin: auto;
+    }
   }
 }
