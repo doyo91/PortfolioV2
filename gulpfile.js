@@ -18,7 +18,7 @@ function copyHtml() {
 function imgTask() {
   return src("src/assets/img/*")
     .pipe(imagemin())
-    .pipe(gulp.dest("dist/assets/images"));
+    .pipe(gulp.dest("dist/assets/img"));
 }
 
 function copyDocs() {
