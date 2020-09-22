@@ -1,0 +1,85 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: $mb-1 0;
+  transition: 0.3s;
+  margin: 3rem auto;
+  // @include set-background(var(--color-secondary));
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  .card__title {
+    font-size: $h2-font-size;
+    font-weight: $font-bold;
+    margin-bottom: $mb-1;
+    margin-top: 0;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &Left {
+      font-size: $h2-font-size;
+    }
+    &Right {
+      color: inherit;
+      font-size: 1.25rem;
+      min-width: 100px;
+
+      i {
+        margin-left: 0.25rem;
+        cursor: pointer;
+        padding: 0.5rem;
+        transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        &:hover {
+          color: $alt-color;
+        }
+      }
+    }
+  }
+
+  &__body {
+    .card__description {
+      font-size: $normal-font-size;
+      font-weight: $font-default;
+      margin-bottom: $mb-1;
+    }
+  }
+
+  &__footer {
+    margin-top: $mb-1;
+    .card__icon {
+      &Desktop {
+        font-size: 1.5rem;
+        margin-right: $mb-1;
+      }
+      &Tablet {
+        font-size: 1.2rem;
+        margin-right: $mb-1;
+      }
+      &Mobile {
+        font-size: 1rem;
+        margin-right: $mb-1;
+      }
+    }
+    &List {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: $mb-2;
+
+      li {
+        font-size: $small-font-size;
+        font-weight: $font-default;
+        margin-right: 10px;
+        border: 1px solid $alt-color;
+        padding: 0.2rem 0.5rem;
+        color: $alt-color;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+    }
+  }
+}

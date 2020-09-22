@@ -1,0 +1,38 @@
+// About Section
+.about {
+  &__social {
+  }
+  &__resume {
+  }
+}
+
+// Skills Section
+.skills {
+  &__container {
+    width: 100%;
+    max-width: 650px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__categoryLabel {
+    text-transform: uppercase;
+    h4 {
+      margin-top: $mb-1;
+    }
+  }
+}
+
+// Portfolilo Section
+.portfolio {
+}
+
+@media screen and (min-width: $break-medium) {
+  .skills {
+    &__container {
+      width: 100%;
+      max-width: 650px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
