@@ -25,6 +25,17 @@ function copyDocs() {
   return src("src/assets/docs/*").pipe(gulp.dest("dist/assets/docs"));
 }
 
+function copySalCss() {
+  return src("node_modules/sal.js/dist/sal.css").pipe(
+    gulp.dest("dist/assets/css")
+  );
+}
+function copySalJs() {
+  return src("node_modules/sal.js/dist/sal.js").pipe(
+    gulp.dest("dist/assets/js")
+  );
+}
+
 function jsTask() {
   return src(jsPath)
     .pipe(sourcemaps.init())
@@ -53,6 +64,6 @@ exports.imgTask = imgTask;
 exports.copyDocs = copyDocs;
 exports.copyHtml = copyHtml;
 exports.default = series(
-  parallel(copyHtml, copyDocs, imgTask, jsTask, cssTask),
+  parallel(copyHtml, copySalJs, copySalCss, copyDocs, imgTask, jsTask, cssTask),
   watchTask
 );

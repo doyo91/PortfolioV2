@@ -1,3 +1,4 @@
+sal();
 // dark mode
 // const btn = document.getElementById("switch");
 // const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
@@ -43,6 +44,3 @@ let currentYear = new Date().getFullYear();
 document.getElementsByClassName(
   "footer__currentYear"
 )[0].innerHTML = currentYear;
-
-// SAL JS
-sal();
