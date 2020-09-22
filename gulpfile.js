@@ -37,7 +37,7 @@ function jsTask() {
 function cssTask() {
   return src(cssPath)
     .pipe(sourcemaps.init())
-    .pipe(concat("style.min.css"))
+    .pipe(concat("styles.min.css"))
     .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(sourcemaps.write("."))
     .pipe(dest("dist/assets/css"));
