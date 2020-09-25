@@ -24,7 +24,7 @@
     &::before {
       content: "";
       width: 3px;
-      background-color: $alt-color;
+      background-color: var(--alt-color);
       height: 100%;
       margin-right: 1rem;
       grid-area: line;
@@ -38,7 +38,7 @@
     & span {
       grid-area: location;
       font-size: $normal-font-size;
-      color: $alt-color;
+      color: var(--alt-color);
     }
   }
   &__heading {
@@ -80,6 +80,13 @@
       display: block;
 
       // filter: invert(1);
+    }
+  }
+
+  .darkmode {
+    .header__image {
+      filter: invert(1);
+      transition: 0.5s;
     }
   }
 }

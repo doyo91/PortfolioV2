@@ -35,7 +35,7 @@
         padding: 0.5rem;
         transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
         &:hover {
-          color: $alt-color;
+          color: var(--alt-color);
         }
       }
     }
@@ -74,9 +74,9 @@
         font-size: $small-font-size;
         font-weight: $font-default;
         margin-right: 10px;
-        border: 1px solid $alt-color;
+        border: 1px solid var(--alt-color);
         padding: 0.2rem 0.5rem;
-        color: $alt-color;
+        color: var(--alt-color);
         font-weight: bold;
         border-radius: 5px;
       }
