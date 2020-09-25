@@ -10,11 +10,20 @@ $mb-4: 2rem;
 $mb-5: 3rem;
 
 // color
-$color-primary: #ffffff;
-$color-secondary: #ffffff;
-$text-light: #ffffff;
-$text-dark: #696969;
-$alt-color: #003dff;
+:root {
+  --color-primary: #ffffff;
+  --color-secondary: #ffffff;
+  --text-primary: #696969;
+  --alt-color: #325eee;
+}
+
+// color
+.darkmode {
+  --color-primary: #0a192f;
+  --color-secondary: #172a45;
+  --text-primary: #ffffff;
+  --alt-color: #325eee;
+}
 
 /* z-index */
 $z-tooltip: 10;

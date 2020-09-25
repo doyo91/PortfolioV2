@@ -21,10 +21,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
     <!-- ************ Production ************** -->
-    <link rel="stylesheet" href="assets/css/styles.min.css" />
+    <!-- <link rel="stylesheet" href="assets/css/styles.min.css" /> -->
     <!-- <link rel="stylesheet" href="assets/css/sal.css" /> -->
 
     <!-- ************ Delete ************** -->
+    <link rel="stylesheet" href="assets/css/styles.min.css" />
     <link rel="stylesheet" href="../node_modules/sal.js/dist/sal.css" />
   </head>
   <body>
@@ -67,10 +68,27 @@
           ><span class="social__large">Curriculum</span>
         </a>
       </div>
-      <!-- switch -->
-      <!-- <div class="switch">
-        <button class="btn-toggle" id="switch">Toggle Dark-Mode</button>
-      </div> -->
+      <!-- toggle -->
+      <div class="toggle">
+        <button
+          class="btn-toggle"
+          id="dark-mode-toggle"
+          aria-label="toggle dark mode"
+        >
+          <svg
+            width="100%"
+            background="xmlns"
+            ="http://www.w3.org/2000/svg"
+            viewBox="0 0 496 496"
+          >
+            <path
+              fill="currentColor"
+              d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+              transform="translate(-8 -8)"
+            />
+          </svg>
+        </button>
+      </div>
     </header>
     <!-- About -->
     <section class="section about">
@@ -171,7 +189,7 @@
             <li class="skills__categoryItem">Git & Github</li>
             <li class="skills__categoryItem">VS Code</li>
             <li class="skills__categoryItem">Photoshop</li>
-            <li class="skills__categoryItem">Postman</li>
+            <li class="skills__categoryItem">Gulp</li>
           </ul>
         </div>
       </div>
@@ -225,6 +243,7 @@
             <div class="card__responsive">
               <i class="fas fa-desktop card__iconDesktop"></i>
               <i class="fas fa-tablet-alt card__iconTablet"></i>
+              <i class="fas fa-mobile-alt card__iconMobile"></i>
             </div>
             <ul class="card__footerList">
               <li>JavaScript</li>
