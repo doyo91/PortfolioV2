@@ -31,8 +31,23 @@
     color: inherit;
     text-align: left;
 
+    & strong {
+      font-weight: $font-bold;
+      &:hover {
+        color: var(--alt-color);
+      }
+    }
     & p {
       margin-top: $mb-1;
+    }
+
+    .link {
+      font-weight: $font-bold;
+
+      &:hover {
+        color: var(--alt-color);
+        text-decoration: underline;
+      }
     }
   }
 }
