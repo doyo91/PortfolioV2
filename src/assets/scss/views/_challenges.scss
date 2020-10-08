@@ -1,0 +1,85 @@
+.challenge {
+  width: 100%;
+  height: auto;
+  margin: $mb-3 auto;
+  display: flex;
+  flex-direction: column;
+
+  .cardChallenge {
+    margin: $mb-3 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__image {
+      width: 100%;
+      max-width: 400px;
+      object-fit: contain;
+    }
+
+    &__info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    &__title {
+      font-size: $h2-font-size;
+      line-height: 1.2;
+      margin: $mb-2 0;
+    }
+
+    &__description {
+      font-size: $normal-font-size;
+      line-height: 1.2;
+    }
+
+    &__links {
+      margin: $mb-2 0 0;
+
+      a {
+        margin-right: $mb-2;
+        font-size: 1.5rem;
+        &:hover {
+          color: var(--alt-color);
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $break-medium) {
+  .challenge {
+    .cardChallenge {
+      margin: $mb-3 auto;
+      display: grid;
+      gap: 20px;
+      grid-template-areas: "left right";
+
+      &__image {
+        grid-area: left;
+      }
+      &__info {
+        grid-area: right;
+      }
+
+      &.reverse {
+        .cardChallenge__image {
+          grid-area: right;
+        }
+        .cardChallenge__info {
+          grid-area: left;
+        }
+      }
+    }
+  }
+}
+
+.darkmode {
+  .cardChallenge__image {
+    filter: brightness(0.8) contrast(1.2);
+    transition: 0.5s;
+  }
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portoflio personal, desarrollador web Samuel Gil"
+    />
+    <meta
+      name="keywords"
+      content="portfolio, desarrollo, web, javascript, reactjs, angular"
+    />
+    <meta name="author" content="samuel.gil91dev@gmail.com" />
+    <meta name="copyright" content="Samuel Gil" />
+
+    <title>Samuel Gil || Challenges Frontend Mentor</title>
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <!-- ************ Production ************** -->
+    <!-- <link rel="stylesheet" href="assets/css/styles.min.css" /> -->
+    <!-- <link rel="stylesheet" href="assets/css/sal.css" /> -->
+
+    <!-- ************ Delete ************** -->
+    <link rel="stylesheet" href="assets/css/styles.min.css" />
+    <link rel="stylesheet" href="../node_modules/sal.js/dist/sal.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <!-- toggle -->
+      <div class="toggle">
+        <button
+          class="btn-toggle"
+          id="dark-mode-toggle"
+          aria-label="toggle dark mode"
+        >
+          <svg
+            width="100%"
+            background="xmlns"
+            ="http://www.w3.org/2000/svg"
+            viewBox="0 0 496 496"
+          >
+            <path
+              fill="currentColor"
+              d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+              transform="translate(-8 -8)"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Challenge -->
+    <section id="challenge" class="section challenge">
+      <!-- item #1 -->
+      <article
+        class="cardChallenge"
+        data-sal="fade"
+        data-sal-duration="1200"
+        data-sal-delay="200"
+        data-sal-easing="ease-out-cubic"
+      >
+        <div class="cardChallenge__image">
+          <img
+            src="assets/img/challenges/challenge1.jpg"
+            alt="image challenge"
+          />
+        </div>
+        <div class="cardChallenge__info">
+          <h5 class="cardChallenge__title">Article preview component</h5>
+          <p class="cardChallenge__description">
+            Componente de vista previa del artículo. Diseño adaptable a
+            distintas pantallas y botón que muestra los enlaces para compartir
+            en redes sociales. JavaScript, Sass y BEM.
+          </p>
+          <div class="cardChallenge__links">
+            <a
+              href="https://github.com/doyo91/article-preview-component"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://doyo91.github.io/article-preview-component/"
+              target="_blank"
+            >
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+      <!-- item #2 -->
+      <article
+        class="cardChallenge reverse"
+        data-sal="fade"
+        data-sal-duration="1200"
+        data-sal-delay="200"
+        data-sal-easing="ease-out-cubic"
+      >
+        <div class="cardChallenge__image">
+          <img
+            src="assets/img/challenges/challenge2.jpg"
+            alt="image challenge"
+          />
+        </div>
+        <div class="cardChallenge__info">
+          <h5 class="cardChallenge__title">
+            Social media dashboard with theme switcher
+          </h5>
+          <p class="cardChallenge__description">
+            Dashboard de redes sociales, con switch para cambiar a tema oscuro.
+            Adaptable a diferentes pantallas y cambio de modo claro/oscuro.
+            JavaScript, Sass y BEM.
+          </p>
+          <div class="cardChallenge__links">
+            <a
+              href="https://github.com/doyo91/social-media-dashboard-frontmentor"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://doyo91.github.io/social-media-dashboard-frontmentor/"
+              target="_blank"
+            >
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+      <!-- item #3-->
+      <article
+        class="cardChallenge"
+        data-sal="fade"
+        data-sal-duration="1200"
+        data-sal-delay="200"
+        data-sal-easing="ease-out-cubic"
+      >
+        <div class="cardChallenge__image">
+          <img
+            src="assets/img/challenges/challenge3.jpg"
+            alt="image challenge"
+          />
+        </div>
+        <div class="cardChallenge__info">
+          <h5 class="cardChallenge__title">Fylo data storage component</h5>
+          <p class="cardChallenge__description">
+            Componente de almacenamiento de datos adaptable a diferentes tamaños
+            de pantalla. Se ha utilizado Sass y la metodología BEM.
+          </p>
+          <div class="cardChallenge__links">
+            <a
+              href="https://github.com/doyo91/Fylo-data-storage-frontmentor"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://doyo91.github.io/Fylo-data-storage-frontmentor/"
+              target="_blank"
+            >
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__copy">
+        <p>
+          Desarrollado por
+          <a
+            href="https://github.com/doyo91"
+            target="_blank"
+            class="footer__link"
+            >Samuel Gil</a
+          >|| &copy; <span class="footer__currentYear">2020</span>
+        </p>
+      </div>
+
+      <div class="social">
+        <a
+          class="social__link"
+          target="_blank"
+          href="mailto:samuel.gil91dev@gmail.com?Subject=Contacto%20desde%20web"
+          >Mail →
+        </a>
+        <a href="https://github.com/doyo91" target="_blank" class="social__link"
+          >Github →</a
+        >
+        <a
+          href="https://www.linkedin.com/in/samuel-gil91"
+          target="_blank"
+          class="social__link"
+          >LinkedIn →</a
+        >
+        <a
+          href="assets/CV-Samuel-Gil-Septiembre-2020.pdf"
+          download
+          class="social__link"
+          ><span class="social__small">CV →</span
+          ><span class="social__large">Curriculum →</span></a
+        >
+      </div>
+    </footer>
+
+    <!-- ************ Production ************** -->
+    <!-- <script src="assets/js/sal.js"></script> -->
+    <!-- <script src="assets/js/main.min.js"></script> -->
+    <!-- ************************************** -->
+
+    <!-- ******************DELETE************** -->
+    <script src="../node_modules/sal.js/dist/sal.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
