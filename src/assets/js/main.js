@@ -29,8 +29,9 @@ const days = [
   "sábado",
 ];
 
+const day = document.getElementById("day");
 let currentDay = new Date().getDay();
-document.getElementById("day").innerHTML = days[currentDay];
+day ? (day.innerHTML = days[currentDay]) : "";
 
 // Año footer
 let currentYear = new Date().getFullYear();
