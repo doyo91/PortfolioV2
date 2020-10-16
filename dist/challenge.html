@@ -20,8 +20,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
+    <!-- ************ Production ************** -->
+    <!-- <link rel="stylesheet" href="assets/css/styles.min.css" /> -->
+    <!-- <link rel="stylesheet" href="assets/css/sal.css" /> -->
+
+    <!-- ************ Delete ************** -->
     <link rel="stylesheet" href="assets/css/styles.min.css" />
-    <link rel="stylesheet" href="assets/css/sal.css" />
+    <link rel="stylesheet" href="../node_modules/sal.js/dist/sal.css" />
   </head>
   <body>
     <!-- Header -->
@@ -154,6 +159,39 @@
           </div>
         </div>
       </article>
+      <!-- item #4-->
+      <article
+        class="cardChallenge reverse"
+        data-sal="fade"
+        data-sal-duration="1200"
+        data-sal-delay="200"
+        data-sal-easing="ease-out-cubic"
+      >
+        <div class="cardChallenge__image">
+          <img src="assets/img/challenge4.jpg" alt="image challenge" />
+        </div>
+        <div class="cardChallenge__info">
+          <h5 class="cardChallenge__title">Four card feature section</h5>
+          <p class="cardChallenge__description">
+            Adaptable a diferentes tamaños de pantalla. Se ha utilizado Sass y
+            la metodología BEM.
+          </p>
+          <div class="cardChallenge__links">
+            <a
+              href="https://github.com/doyo91/four-card-feature-section"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://doyo91.github.io/four-card-feature-section/"
+              target="_blank"
+            >
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </article>
     </section>
     <!-- Footer -->
     <footer class="footer">
@@ -195,7 +233,13 @@
       </div>
     </footer>
 
-    <script src="assets/js/sal.js"></script>
-    <script src="assets/js/main.min.js"></script>
+    <!-- ************ Production ************** -->
+    <!-- <script src="assets/js/sal.js"></script> -->
+    <!-- <script src="assets/js/main.min.js"></script> -->
+    <!-- ************************************** -->
+
+    <!-- ******************DELETE************** -->
+    <script src="../node_modules/sal.js/dist/sal.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
