@@ -20,6 +20,16 @@
       margin-top: $mb-1;
     }
   }
+
+  &__categoryItem {
+    cursor: default;
+    transition: ease 0.3s;
+
+    &:hover {
+      color: var(--alt-color);
+      font-weight: bold;
+    }
+  }
 }
 
 @media screen and (min-width: $break-medium) {

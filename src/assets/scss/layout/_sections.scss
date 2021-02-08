@@ -33,6 +33,7 @@
 
     & strong {
       font-weight: $font-bold;
+      cursor: default;
       &:hover {
         color: var(--alt-color);
       }

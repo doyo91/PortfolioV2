@@ -51,18 +51,22 @@
 
   &__footer {
     margin-top: $mb-1;
+
     .card__icon {
-      &Desktop {
+      transition: all 0.3s ease;
+      margin-right: $mb-1;
+      cursor: default;
+      &:hover {
+        color: var(--alt-color);
+      }
+      &--Desktop {
         font-size: 1.5rem;
-        margin-right: $mb-1;
       }
-      &Tablet {
+      &--Tablet {
         font-size: 1.2rem;
-        margin-right: $mb-1;
       }
-      &Mobile {
+      &--Mobile {
         font-size: 1rem;
-        margin-right: $mb-1;
       }
     }
     &List {
@@ -79,6 +83,13 @@
         color: var(--alt-color);
         font-weight: bold;
         border-radius: 5px;
+        cursor: default;
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: var(--color-primary);
+          background-color: var(--alt-color);
+        }
       }
     }
   }
